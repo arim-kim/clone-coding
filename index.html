@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- 문자 인코딩 설정 -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 뷰포트 랜더링 방식 설정 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>DAZED KOREA 데이즈드 코리아</title>
+
+        <link rel="stylesheet" href="/css/main.css">
+        <script defer="defer" src="/js/main.js"></script>
+        <!-- slidDown/slideUp을 위한 제이쿼리 링크  -->
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+        <!-- 브라우저 기본 스타일을 reset합니다 -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+
+        <!-- font Noto San Kr -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- 헤더 메인 화면 로고 -->
+        <header id="header--main">
+            <img id="logo" src="./images/dazed_logo_main.png" alt="DAZED"/>
+           
+            <!-- 햄버거 바 메뉴 -->
+            <svg id="btn--open" class="icon-menu" >
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu">
+                    <svg id="icon-menu" viewbox="0 0 44 48" width="100%" height="100%"><g id="Symbols" stroke="none" stroke-width="1" fill-rule="evenodd"><g id="Icon/Menu"><path d="M12.642,47 L12.642,39.392 L10.854,47 L9.17399998,47 L7.38599998,39.392 L7.38599998,47 L5.95799998,47 L5.95799998,38.324 L8.58599998,38.324 L10.086,45.272 L11.562,38.324 L14.19,38.324 L14.19,47 L12.642,47 Z M16.706,47 L16.706,38.324 L21.242,38.324 L21.242,39.524 L18.302,39.524 L18.302,41.888 L21.026,41.888 L21.026,43.064 L18.302,43.064 L18.302,45.8 L21.338,45.8 L21.338,47 L16.706,47 Z M26.818,47 L24.754,39.728 L24.754,47 L23.338,47 L23.338,38.324 L25.75,38.324 L27.814,45.596 L27.814,38.324 L29.23,38.324 L29.23,47 L26.818,47 Z M37.326,44.168 C37.326,44.6640025 37.2760005,45.0979981 37.176,45.47 C37.0759995,45.8420019 36.9140011,46.1539987 36.69,46.406 C36.4659989,46.6580013 36.1720018,46.8479994 35.808,46.976 C35.4439982,47.1040006 34.9980027,47.168 34.47,47.168 C33.9179973,47.168 33.4620018,47.0980007 33.102,46.958 C32.7419982,46.8179993 32.4560011,46.6140013 32.244,46.346 C32.031999,46.0779987 31.8820005,45.7500019 31.794,45.362 C31.7059996,44.9739981 31.662,44.5360024 31.662,44.048 L31.662,38.324 L33.246,38.324 L33.246,43.892 C33.246,44.1240012 33.2539999,44.3639988 33.27,44.612 C33.2860001,44.8600012 33.3319996,45.085999 33.408,45.29 C33.4840004,45.494001 33.6059992,45.6619993 33.774,45.794 C33.9420009,45.9260007 34.1819985,45.992 34.494,45.992 C34.7980015,45.992 35.0359992,45.9300006 35.208,45.806 C35.3800009,45.6819994 35.5079996,45.522001 35.592,45.326 C35.6760004,45.129999 35.7259999,44.9100012 35.742,44.666 C35.7580001,44.4219988 35.766,44.1840012 35.766,43.952 L35.766,38.324 L37.326,38.324 L37.326,44.168 Z"></path><path d="M10.4444444,13 C10.4444443,13 32.4444446,13 32.4444444,13 C33.9444446,14.5 32.4444444,16 32.4444444,16 L10.4444444,16 C10.4444444,16 9.44444444,14.5 10.4444444,13 Z" fill-rule="nonzero"></path><path d="M10.4444231,19 L32.4433659,19 C33.943294,20.5 32.4433659,22 32.4433659,22 L10.4444231,22 C10.4444231,22 9.44447117,20.5 10.4444231,19 Z" fill-rule="nonzero"></path><path d="M10.4444231,25 L32.4433659,25 C33.943294,26.5 32.4433659,28 32.4433659,28 L10.4444231,28 C10.4444231,28 9.44447117,26.5 10.4444231,25 Z" fill-rule="nonzero"></path></g></g></svg>
+                </use>
+            </svg>
+            <svg id="btn--closed" class="icon-menu-back-hidden-phone" >
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-back">
+                    <svg id="icon-menu-back" viewbox="0 0 44 48" width="100%" height="100%"><g id="Symbols-n" stroke="none" stroke-width="1" fill-rule="evenodd"><g id="Icon/Action/Arrow-Up-WH-Copy"><g transform="translate(21.500000, 21.000000) rotate(-90.000000) translate(-21.500000, -21.000000) translate(15.000000, 10.000000)" fill-rule="nonzero"><polygon points="9.6758057 11.1333333 1.4262266 2.8837542 0.7191198 2.1766474 2.1333333 0.7624339 2.8404401 1.4695407 11.797126 10.4262266 12.5042328 11.1333333 12.1506794 11.4868867 11.797126 11.8404401 2.8404401 20.797126 2.1333333 21.5042328 0.7191198 20.0900192 1.4262266 19.3829124"></polygon></g><path d="M13.44,44.6 C13.44,45.1200026 13.3660007,45.5359984 13.218,45.848 C13.0699992,46.1600016 12.8620013,46.4019991 12.594,46.574 C12.3259986,46.7460009 12.0080018,46.8599997 11.64,46.916 C11.2719981,46.9720003 10.8680022,47 10.428,47 L8.09999998,47 L8.09999998,38.324 L10.86,38.324 C11.2440019,38.324 11.5859985,38.3579997 11.886,38.426 C12.1860015,38.4940003 12.4419989,38.6119992 12.654,38.78 C12.866001,38.9480008 13.0259994,39.1699986 13.134,39.446 C13.2420005,39.7220014 13.296,40.0679979 13.296,40.484 C13.296,41.0280027 13.1860011,41.4619984 12.966,41.786 C12.7459989,42.1100016 12.3760026,42.3279994 11.856,42.44 C12.1600015,42.4960003 12.413999,42.5819994 12.618,42.698 C12.822001,42.8140006 12.9839994,42.9619991 13.104,43.142 C13.2240006,43.3220009 13.3099997,43.5339988 13.362,43.778 C13.4140002,44.0220012 13.44,44.2959985 13.44,44.6 Z M11.736,40.7 C11.736,40.4439987 11.7020003,40.2380008 11.634,40.082 C11.5659996,39.9259992 11.4720006,39.8040004 11.352,39.716 C11.2319994,39.6279996 11.0920008,39.5700001 10.932,39.542 C10.7719992,39.5139999 10.6000009,39.5 10.416,39.5 L9.69599998,39.5 L9.69599998,41.924 L10.356,41.924 C10.5800011,41.924 10.7799991,41.9060002 10.956,41.87 C11.1320009,41.8339998 11.2759994,41.7700005 11.388,41.678 C11.5000005,41.5859995 11.5859997,41.4620008 11.646,41.306 C11.7060003,41.1499992 11.736,40.9480012 11.736,40.7 Z M11.844,44.444 C11.844,43.9239974 11.7240012,43.564001 11.484,43.364 C11.2439988,43.163999 10.8720025,43.064 10.368,43.064 L9.69599998,43.064 L9.69599998,45.824 L10.368,45.824 C10.5600009,45.824 10.7439991,45.8100001 10.92,45.782 C11.0960009,45.7539999 11.2539993,45.6920005 11.394,45.596 C11.5340007,45.4999995 11.6439996,45.3600009 11.724,45.176 C11.8040004,44.9919991 11.844,44.7480015 11.844,44.444 Z M19.796,47 L19.28,45.008 L16.664,45.008 L16.148,47 L14.564,47 L16.988,38.324 L19.064,38.324 L21.44,47 L19.796,47 Z M17.972,39.608 L16.988,43.832 L18.956,43.832 L17.972,39.608 Z M28.312,44.408 C28.312,45.3760048 28.0920022,46.0779978 27.652,46.514 C27.2119978,46.9500022 26.5320046,47.168 25.612,47.168 C24.9399966,47.168 24.4140019,47.0620011 24.034,46.85 C23.6539981,46.6379989 23.3700009,46.3380019 23.182,45.95 C22.9939991,45.5619981 22.8780002,45.0880028 22.834,44.528 C22.7899998,43.9679972 22.768,43.3400035 22.768,42.644 C22.768,41.9959968 22.7899998,41.3980027 22.834,40.85 C22.8780002,40.3019973 22.995999,39.828002 23.188,39.428 C23.380001,39.027998 23.6699981,38.7160011 24.058,38.492 C24.4460019,38.2679989 24.9839966,38.156 25.672,38.156 C26.5840046,38.156 27.239998,38.3639979 27.64,38.78 C28.040002,39.1960021 28.24,39.8519955 28.24,40.748 L28.24,40.94 L26.668,40.94 L26.668,40.784 C26.668,40.6239992 26.6580001,40.4580009 26.638,40.286 C26.6179999,40.1139991 26.5720004,39.9580007 26.5,39.818 C26.4279996,39.6779993 26.3240007,39.5620005 26.188,39.47 C26.0519993,39.3779995 25.8680012,39.332 25.636,39.332 C25.3479986,39.332 25.1200008,39.4059993 24.952,39.554 C24.7839992,39.7020007 24.6580004,39.9119986 24.574,40.184 C24.4899996,40.4560014 24.4380001,40.789998 24.418,41.186 C24.3979999,41.582002 24.388,42.0239976 24.388,42.512 C24.388,43.1360031 24.3999999,43.6679978 24.424,44.108 C24.4480001,44.5480022 24.4999996,44.9079986 24.58,45.188 C24.6600004,45.4680014 24.7799992,45.6719994 24.94,45.8 C25.1000008,45.9280006 25.3159986,45.992 25.588,45.992 C25.8520013,45.992 26.0579993,45.9420005 26.206,45.842 C26.3540007,45.7419995 26.4659996,45.6140008 26.542,45.458 C26.6180004,45.3019992 26.6659999,45.126001 26.686,44.93 C26.7060001,44.733999 26.716,44.540001 26.716,44.348 L26.716,44.144 L28.312,44.144 L28.312,44.408 Z M34.152,47 L31.944,42.284 L34.056,38.324 L35.868,38.324 L33.54,42.188 L35.988,47 L34.152,47 Z M30.288,47 L30.288,38.324 L31.896,38.324 L31.896,47 L30.288,47 Z"></path></g></g></svg>
+                </use>
+            </svg>
+   
+
+        <!-- 메뉴화면 -->
+        <div class = "menu-container" id="down-menu">
+            <div class="main-menu-box" >
+                <!-- main menu -->
+                <ul class="primary-links">
+                    <li class="menu-link" id="menu-main">
+                        <a class="main-menu-item" href="\">MAIN</a>
+                    </li>
+                    <li class="menu-link" id="menu-edit">
+                        <a class="main-menu-item" href="...... 편집자 편지 ">EDITOR'S LETTER</a>
+                    </li>
+                    <li class="menu-link" id="menu-news">
+                        <a class="main-menu-item" href="...뉴스 ">NEWS</a>
+                    </li>
+                    <li class="menu-link" id="menu-fashion">
+                        <a class="main-menu-item" href="...패션 ">FASHION</a>
+                    </li>
+                    <li class="menu-link" id="menu-beauty">
+                        <a class="main-menu-item" href="...뷰티 ">BEAUTY</a>
+                    </li>
+                    <li class="menu-link" id="menu-music">
+                        <a class="main-menu-item" href="...음악 ">MUSIC</a>
+                    </li>
+                    <li class="menu-link" id="menu-photo">
+                        <a class="main-menu-item" href="...사진 ">ART & PHOTOGRAPHY</a>
+                    </li>
+                </ul>
+                <!-- social links -->
+                <div class="social-links">
+                    <a class="menu-link" href="facebook 주소" target="_blank">
+                        <svg class="icon-facebook">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook">
+                                <svg id="icon-facebook" viewbox="0 0 45 45" width="100%" height="100%"><path d="M20.247 18.192h-2.247v3.761h2.247v11.047h4.321v-11.094h3.015l0.321-3.714h-3.336v-2.115c0-0.876 0.172-1.222 0.997-1.222h2.338v-3.855h-2.992c-3.215 0-4.665 1.451-4.665 4.231v2.962z"></path></svg>
+                            </use>
+                        </svg>
+                    </a> 
+                    <a class="menu-link" href="instagrame 주소" target="_blank">
+                        <svg class="icon-instagram">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram">
+                                <svg id="icon-instagram" viewbox="0 0 45 45" width="100%" height="100%"><path d="M13.5379308,32.9998056 C12.136413,32.9998056 11,31.8630039 11,30.4605143 L11,13.5379308 C11,12.1362187 12.136413,11 13.5379308,11 L30.4620692,11 C31.8637813,11 33,12.1362187 33,13.5379308 L33,30.4605143 C33,31.8630039 31.8637813,32.9998056 30.4620692,32.9998056 L13.5379308,32.9998056 Z M21.9999028,17.7689168 C19.6631329,17.7689168 17.7691112,19.6627442 17.7691112,21.9995141 C17.7691112,24.3358953 19.6631329,26.2306945 21.9999028,26.2306945 C24.3366728,26.2306945 26.2310832,24.3358953 26.2310832,21.9995141 C26.2310832,19.6627442 24.3366728,17.7689168 21.9999028,17.7689168 L21.9999028,17.7689168 Z M30.4620692,14.3839725 C30.4620692,13.9169295 30.0830705,13.5379308 29.6150557,13.5379308 L27.0771249,13.5379308 C26.6096932,13.5379308 26.2310832,13.9169295 26.2310832,14.3839725 L26.2310832,16.9228751 C26.2310832,17.3899181 26.6096932,17.7689168 27.0771249,17.7689168 L29.6150557,17.7689168 C30.0830705,17.7689168 30.4620692,17.3899181 30.4620692,16.9228751 L30.4620692,14.3839725 Z M30.4620692,20.3066532 L28.5468624,20.3066532 C28.6864117,20.8483298 28.7688196,21.4143012 28.7688196,21.9995141 C28.7688196,25.7385792 25.7383849,28.7688196 21.9999028,28.7688196 C18.2616151,28.7688196 15.230986,25.7385792 15.230986,21.9995141 C15.230986,21.4143012 15.3137827,20.8483298 15.4533319,20.3066532 L13.5379308,20.3066532 L13.5379308,29.6150557 C13.5379308,30.08171 13.9169295,30.4605143 14.3849443,30.4605143 L29.6150557,30.4605143 C30.0830705,30.4605143 30.4620692,30.08171 30.4620692,29.6150557 L30.4620692,20.3066532 Z" id="Fill-1"></path></svg>
+                            </use>
+                        </svg>
+                    </a>   
+                    <a class="menu-link" href="twitter 주소" target="_blank">
+                        <svg class="icon-twitter">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter">
+                                <svg id="icon-twitter" viewbox="0 0 45 45" width="100%" height="100%"><path d="M31.364 16.836c0.93-0.56 1.644-1.448 1.98-2.505-0.87 0.519-1.834 0.896-2.86 1.099-0.822-0.88-1.992-1.43-3.287-1.43-2.487 0-4.504 2.027-4.504 4.527 0 0.355 0.040 0.7 0.117 1.032-3.743-0.189-7.061-1.991-9.282-4.73-0.388 0.669-0.61 1.446-0.61 2.276 0 1.571 0.795 2.956 2.004 3.768-0.738-0.024-1.433-0.227-2.040-0.566-0 0.019-0 0.038-0 0.057 0 2.194 1.552 4.023 3.613 4.439-0.378 0.103-0.776 0.159-1.187 0.159-0.29 0-0.572-0.028-0.847-0.081 0.573 1.799 2.236 3.108 4.207 3.144-1.541 1.214-3.483 1.938-5.593 1.938-0.363 0-0.722-0.021-1.074-0.063 1.993 1.285 4.36 2.034 6.904 2.034 8.284 0 12.813-6.899 12.813-12.881 0-0.196-0.004-0.392-0.013-0.586 0.88-0.638 1.643-1.436 2.247-2.344-0.808 0.36-1.676 0.603-2.587 0.713z"></path></svg>
+                            </use>
+                        </svg>
+                    </a>
+                    <a class="menu-link" href="youtube 주소" target="_blank">
+                        <svg class="icon-youtube">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube">
+                                <svg id="icon-youtube" viewbox="0 0 45 45" width="100%" height="100%"><path d="M29.615,12.184 C26.011,11.938 17.984,11.939 14.385,12.184 C10.488,12.45 10.029,14.804 10,21 C10.029,27.185 10.484,29.549 14.385,29.816 C17.985,30.061 26.011,30.062 29.615,29.816 C33.512,29.55 33.971,27.196 34,21 C33.971,14.815 33.516,12.451 29.615,12.184 L29.615,12.184 Z M19,25 L19,17 L27,20.993 L19,25 L19,25 Z" id="Shape"></path></svg>
+                            </use>
+                        </svg>
+                    </a>
+                    <a class="menu-link" href="applemusic 주소" target="_blank">
+                        <svg class="icon-applemusic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="73px" height="73px" viewbox="0 0 73 73" style="enable-background:new 0 0 73 73;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                            </style>
+                            <g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path class="st0" d="M72,19.94c0-0.72-0.01-1.45-0.03-2.17c-0.04-1.58-0.14-3.17-0.42-4.73c-0.28-1.58-0.75-3.06-1.48-4.5
+                                        c-0.72-1.41-1.66-2.71-2.78-3.83c-1.12-1.12-2.42-2.06-3.83-2.78c-1.44-0.73-2.91-1.2-4.49-1.48c-1.56-0.28-3.15-0.37-4.73-0.42
+                                        C53.51,0.02,52.78,0.01,52.06,0c-0.86,0-1.72,0-2.58,0H22.52c-0.86,0-1.72,0-2.58,0c-0.72,0-1.45,0.01-2.17,0.03
+                                        c-1.58,0.04-3.17,0.14-4.73,0.42C11.46,0.74,9.98,1.2,8.55,1.94C7.13,2.66,5.84,3.6,4.72,4.72S2.65,7.13,1.93,8.55
+                                        c-0.73,1.44-1.2,2.91-1.48,4.5c-0.28,1.56-0.37,3.15-0.42,4.73C0.02,18.5,0.01,19.22,0,19.95c0,0.86,0,1.72,0,2.58v26.96
+                                        c0,0.86,0,1.72,0,2.58c0,0.72,0.01,1.45,0.03,2.17c0.04,1.58,0.14,3.17,0.42,4.73c0.28,1.58,0.75,3.06,1.48,4.5
+                                        c0.72,1.41,1.66,2.71,2.78,3.83c1.12,1.12,2.42,2.06,3.83,2.78c1.44,0.73,2.91,1.2,4.49,1.48c1.56,0.28,3.15,0.37,4.73,0.42
+                                        c0.72,0.02,1.45,0.03,2.17,0.03c0.86,0.01,1.72,0,2.58,0h26.95c0.86,0,1.72,0,2.58,0c0.72,0,1.45-0.01,2.17-0.03
+                                        c1.58-0.04,3.17-0.14,4.73-0.42c1.58-0.28,3.06-0.75,4.49-1.48c1.41-0.72,2.71-1.66,3.83-2.78s2.06-2.41,2.78-3.83
+                                        c0.73-1.44,1.2-2.91,1.48-4.5c0.28-1.56,0.37-3.15,0.42-4.73c0.02-0.72,0.03-1.45,0.03-2.17c0.01-0.86,0-1.72,0-2.58V22.52
+                                        C72,21.66,72,20.8,72,19.94z M52.71,46.85c0,0.91-0.01,1.74-0.2,2.65c-0.19,0.89-0.53,1.72-1.05,2.47
+                                        c-0.52,0.75-1.19,1.36-1.97,1.82c-0.79,0.47-1.62,0.73-2.5,0.91c-1.66,0.33-2.79,0.41-3.86,0.2c-1.03-0.21-1.9-0.68-2.6-1.32
+                                        c-1.03-0.95-1.68-2.23-1.82-3.56c-0.16-1.57,0.36-3.24,1.53-4.48c0.59-0.62,1.34-1.11,2.34-1.5c1.04-0.4,2.19-0.65,3.96-1
+                                        c0.47-0.09,0.93-0.19,1.4-0.28c0.61-0.12,1.14-0.28,1.56-0.8c0.43-0.52,0.43-1.16,0.43-1.78V24.32c0-1.21-0.54-1.54-1.7-1.32
+                                        c-0.83,0.16-18.62,3.75-18.62,3.75c-1,0.24-1.36,0.57-1.36,1.82v23.23c0,0.91-0.05,1.74-0.24,2.65c-0.19,0.89-0.53,1.72-1.05,2.47
+                                        c-0.52,0.75-1.19,1.36-1.97,1.82c-0.79,0.47-1.62,0.74-2.5,0.92c-1.66,0.33-2.79,0.41-3.86,0.2c-1.03-0.21-1.9-0.69-2.6-1.33
+                                        c-1.03-0.95-1.63-2.23-1.78-3.56c-0.16-1.57,0.31-3.24,1.49-4.48c0.59-0.62,1.34-1.11,2.34-1.5c1.04-0.4,2.19-0.65,3.96-1
+                                        c0.47-0.09,0.93-0.19,1.4-0.28c0.61-0.12,1.14-0.28,1.56-0.8c0.42-0.52,0.47-1.13,0.47-1.75c0-4.92,0-26.79,0-26.79
+                                        c0-0.36,0.03-0.6,0.05-0.72c0.09-0.56,0.31-1.05,0.72-1.39c0.34-0.28,0.78-0.48,1.33-0.6l0.01,0L49,11.33
+                                        c0.19-0.04,1.73-0.31,1.91-0.33c1.16-0.1,1.81,0.66,1.81,1.89L52.71,46.85L52.71,46.85z"></path>
+                                </g>
+                            </g>
+                    </svg>
+                    </a>    
+                </div>
+                <ul class="secondary-links">
+                    <li class="menu-link" id="menu-shop-kr">
+                        <a class="main-menu-item" href="..." target="_blank">SHOP [KR]</a>
+                    </li>
+                    <li class="menu-link" id="menu-shop-en">
+                        <a class="main-menu-item" href="..." target="_blank">SHOP [EN]</a>
+                    </li>
+                    <li class="menu-link" id="menu-search">
+                        <a class="main-menu-item" href="..." target="_blank">SEARCH</a>
+                    </li>
+                </ul>
+                <!-- tertiary-links -->
+                <ul class="tertiary-links">
+                    <li class="menu-link" id="menu-contact">
+                        <a class="main-menu-item" href="...">CONTACT</a>
+                    </li>
+                    <li class="menu-link" id="menu-about">
+                        <a class="main-menu-item" href="...">ABOUT</a>
+                    </li>
+                    <li class="menu-link" id="menu-notice">
+                        <a class="main-menu-item" href="...">게시판</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+        <!-- 메인 레이아웃 -->
+        <div class="wrapper" id="wrapper">
+            <!-- 첫번째 -->
+            <div class="first-grid-container">
+                <!-- 첫번째 레이아웃 왼쪽 요소 cover_img-->
+                <div class="grid-item1" >
+                    <img class="cover_img" src="./images/magazine cover.jpg"  style="width: 860.48px;" alt="main-image">
+                    <div class="text-content-container" style="height: 70px;  width: 860.48px;">
+                        <a class="text_content">&lt;데이즈드&gt; 코리아 13주년 에디션 커버</a>
+                    </div>
+                </div>
+                <!-- 첫번째 레이아웃 오른쪽 요소 _ article_list -->
+                <div class="grid-item2">
+                    <span class="article-list-header">News</span>
+                    <div class="article-list-item" style="height:178.8px;  width: 100%;">
+                            <a href="..." class="article-list-item-image">
+                                <span class="article-list-image-container">
+                                <img
+                                    class="list-image"
+                                    src="images\grid-item2_1.jpg"
+                                    style="width: 114.34px; height: 114.34px;"
+                                    alt="first-side-1">
+                                </span>
+                            </a>
+                        <div class="article-list-text-container" style="height: 178.8px;">
+                            <span class="section-link">BEAUTY</span>
+                            <a class="article-list-text">뉴욕을 기반으로 한 핸드메이드 니치 향수 브랜드 르 라보가 올해로 론칭 15주년을 맞이했다. 이태원을 거닐다, 15주년을 기념해 새롭게 바꾼 르 라보의 윈도 디스플레이에 이끌려 부티크로 들어갔다. 그곳에서 발견한 르 라보의 특별한 여덟 가지에 대하여.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article-list-item">
+                        <a href="..." class="article-list-item-image">
+                            <span class="article-list-image-container">
+                            <img
+                                class="list-image"
+                                src="images\grid-item2_2.jpg"
+                                style="width: 114.34px; height: 114.34px;"
+                                alt="first-side-2">
+                            </span>
+                        </a>
+                    <div class="article-list-text-container" style="height: 49.2px;">
+                        <span class="section-link">FASHION</span>
+                        <a class="article-list-text">공간과 시간을 초월해 나를 만나.
+                        </a>
+                    </div>
+                </div>
+                    <div class="article-list-item">
+                        <a href="..." class="article-list-item-image">
+                            <span class="article-list-image-container">
+                            <img
+                                class="list-image"
+                                src="images\grid-item2_3.jpg"
+                                style="width: 114.34px; height: 114.34px;"
+                                alt="first-side-3">
+                                
+                            </span>
+                        </a>
+                    <div class="article-list-text-container" style="height: 114px;">
+                        <span class="section-link">FASHION</span>
+                        <a class="article-list-text">몸과 말. 배우와 세대. 그가 사랑한 생 로랑과 연기하는 일. 그리고 지금 한국 예술과 행복의 의미까지. 이정재의 아홉 단어.
+                        </a>
+                    </div>
+                </div>
+                    <div class="article-list-item">
+                        <a href="..." class="article-list-item-image" >
+                            <span class="article-list-image-container" >
+                            <img
+                                class="list-image"
+                                src="images\grid-item2_4.jpg"
+                                style="width: 114.34px; height: 114.34px;"
+                                alt="first-side-4">
+                            </span>
+                        </a>
+                    <div class="article-list-text-container" style="height: 92.4px;">
+                        <span class="section-link">FASHION</span>
+                        <a class="article-list-text">바르셀로나의 패션 브랜드이자 프로젝트, 팔로마 울은 제한과 제약을 뛰어넘고 자유 위에 굳건히 자리잡았다. 
+                        </a>
+                    </div>
+                </div>
+                    <div class="article-list-more">
+                        <a class="article-list-more-link" href=".......">
+                            MORE NEWS
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 두번째 -->
+            <div class="second-youtube-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0LTr2lPOR48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- 세번째 -->
+            <div class="third-magazine-interview-container">
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third_frame1.png" alt="third-1">
+                    <div class="text-content-container" style="height: 96.8px;  width : 96%;">
+                        <a class="text_content">카리나, 지젤, 윈터 그리고 닝닝이 그릴 아바타 아이ae와 플랫Flat이라는 가상세계, 현실과 환상이 완벽히 공존하는 미래의 동화 속으로 지금
+                        들어갈 것.</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third-frame2.png" alt="third-2">
+                    <div class="text-content-container" style="height: 148px; width : 95.5%;">
+                        <a class="text_content">그루비룸이 새로운 레이블 ‘AREA’의 출항을 알리며, 첫 번째 뮤지션 제미나이를 공개했다. 박재범과 휘민, 규정은 입을 모아 제미나이가 새
+                        시대를 대표할 팝 스타가 될 거라<br> 공언했다. &lt;데이즈드&gt;와 헤론 프레스턴의 교점에서 펼쳐진 이토록 찬란한 시작.</a></div>
+                </div>
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third-frame3.jpg" alt="third-3">
+                    <div class="text-content-container" style="height: 96.8px; width :95.5%;">
+                        <a class="text_content">시대의 배우, 김태리의 마법은 거기 있다. 누구라도 ‘태리와 나’라는 아늑한 동굴 속에 붙들어두는 것. 장 선장과 나. <br> 혜원과 나. 숙희와 나.
+                        티파니 T1을 한 태리와 우리.</a></div>
+                </div>
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third-frame4.jpg" alt="third-4">
+                    <div class="text-content-container" style="height: 71.2px; width : 95.5%;">
+                        <a class="text_content">흐르는 시간을 잡고, 엠포리오 아르마니의 새 컬렉션과 워치, 주얼리를 착용한 이도현이 이야기하는, 우리가 함께할 미래.</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third-frame5.jpg" alt="third-5">
+                    <div class="text-content-container" style="height: 70px; width : 95.5%;">
+                        <a class="text_content">픽스낫띵의 새 옷을 입은 김다미의 에브리띵.</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third-frame6.png" alt="third-6">
+                    <div class="text-content-container" style="height: 70px; width : 95.5%;">
+                        <a class="text_content">지드래곤을 위해서.</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third-frame7.jpg" alt="third-7">
+                    <div class="text-content-container" style="height: 70px; width : 95.5%;">
+                        <a class="text_content">아린이 새 신을 신고 먼저 맞이하는 새봄, 새 마음.</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third-frame8.png" alt="third-8">
+                    <div class="text-content-container" style="height: 70px; width : 95.5%;">
+                        <a class="text_content">틀린 게 아니라 다른 거라니까.</a>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img class="interview_cover_img" src="images\third-frame9.jpg" alt="third-9">
+                    <div class="text-content-container" style="height: 70px; width : 95.5%;">
+                        <a class="text_content">사랑에겐 사랑이라고, 태민에겐 태민으로, 충분할 말들.</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 네번째 -->
+            <div class="forth-section-container">
+                <div class="most-read">Most Read</div>
+                <div class="forth-section-main">
+                    <div class="forth-main-conent-container">
+                        <a href="" class="forth-main-conent-link">
+                            <img src="images/forthitem1.jpg" style="width:330px; height: 220.04px;" alt="forth-1">
+                        </a>
+                        <div class="forth-main-text-container">
+                            <span class="forth-main-text-section">
+                                <a class="forth-main-text-section-link" href="(1)">FASHION</a>
+                            </span>
+                            <a class="forth-main-text-content" href="(1)">시대를 관통하는 두 아티스트가 의기투합해 만든 &lt;데이즈드&gt;식 &lt;나 혼자 산다&gt;의 화보는 결코 혼자가 아니었다.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="forth-main-conent-container">
+                        <a href="" class="forth-main-conent-link">
+                            <img src="images/forthitem2.jpg" style="width:330px; height: 220.04px;" alt="forth-2">
+                        </a>
+                        <div class="forth-main-text-container">
+                            <span class="forth-main-text-section">
+                                <a class="forth-main-text-section-link" href="(2)">FASHION</a>
+                            </span>
+                            <a class="forth-main-text-content" href="(2)">아이유의 10년, &lt;데이즈드&gt;의 10년, 꽃다운 나이에 바치는 꽃다운 꽃다발. 마침내 점점 새로워지려는 균형.</a>
+                        </div>
+                    </div>
+                    <div class="forth-main-conent-container">
+                        <a href="" class="forth-main-conent-link">
+                            <img src="images/forthitem3.jpg" style="width:330px; height: 220.04px;" alt="forth-3">
+                        </a>
+                        <div class="forth-main-text-container">
+                            <span class="forth-main-text-section">
+                                <a class="forth-main-text-section-link" href="(3)">NEWS</a>
+                            </span>
+                            <a class="forth-main-text-content" href="(3)">&lt;데이즈드&gt; 코리아 1월호 커버
+                            </a>
+                        </div>
+                    </div>
+                    <div class="forth-main-conent-container">
+                        <a href="" class="forth-main-conent-link">
+                            <img src="images/forthitem4.jpg" style="width:330px; height: 220.04px;" alt="forth-4">
+                        </a>
+                        <div class="forth-main-text-container">
+                            <span class="forth-main-text-section">
+                                <a class="forth-main-text-section-link" href="(4)">MUSIC</a>
+                            </span>
+                            <a class="forth-main-text-content" href="(4)">유리잔 속에 담긴 망고 한 알을 다 먹을 때까지 나눈 짧은 대화.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Load-more-article">
+                    <a class="Load-more-article-link" href="">LOAD MORE ARTICLES</a>
+                </div>
+            </div>
+
+
+
+            <!-- footer -->
+            <div class="footer-placeholder"></div>
+            <div class="footer-container">
+                <div class="footer-container-inner">
+                <span class="dazed-logo-top-holder" style="height: 134px;">
+                    <img class="dazed-logo-top-holder-img" src="images/dazed__footer_logo_w.png" alt="footer-dazed">
+                </span>
+                <div class="footer-nav">
+                    <!-- social links -->
+                    <div class="social-links">
+                        <!-- target = _blank는 새 탭을 만드는 것 -->
+                        <a class="menu-link" href="facebook 주소" target="_blank">
+                            <svg class="icon-facebook">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook">
+                                    <svg id="facebook" viewbox="0 0 45 45" width="100%" height="100%"><path d="M20.247 18.192h-2.247v3.761h2.247v11.047h4.321v-11.094h3.015l0.321-3.714h-3.336v-2.115c0-0.876 0.172-1.222 0.997-1.222h2.338v-3.855h-2.992c-3.215 0-4.665 1.451-4.665 4.231v2.962z"></path></svg>
+                                </use>
+                            </svg>
+                        </a> 
+                        <a class="menu-link" href="instagrame 주소" target="_blank">
+                            <svg class="icon-instagram">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram">
+                                    <svg id="instagram" viewbox="0 0 45 45" width="100%" height="100%"><path d="M13.5379308,32.9998056 C12.136413,32.9998056 11,31.8630039 11,30.4605143 L11,13.5379308 C11,12.1362187 12.136413,11 13.5379308,11 L30.4620692,11 C31.8637813,11 33,12.1362187 33,13.5379308 L33,30.4605143 C33,31.8630039 31.8637813,32.9998056 30.4620692,32.9998056 L13.5379308,32.9998056 Z M21.9999028,17.7689168 C19.6631329,17.7689168 17.7691112,19.6627442 17.7691112,21.9995141 C17.7691112,24.3358953 19.6631329,26.2306945 21.9999028,26.2306945 C24.3366728,26.2306945 26.2310832,24.3358953 26.2310832,21.9995141 C26.2310832,19.6627442 24.3366728,17.7689168 21.9999028,17.7689168 L21.9999028,17.7689168 Z M30.4620692,14.3839725 C30.4620692,13.9169295 30.0830705,13.5379308 29.6150557,13.5379308 L27.0771249,13.5379308 C26.6096932,13.5379308 26.2310832,13.9169295 26.2310832,14.3839725 L26.2310832,16.9228751 C26.2310832,17.3899181 26.6096932,17.7689168 27.0771249,17.7689168 L29.6150557,17.7689168 C30.0830705,17.7689168 30.4620692,17.3899181 30.4620692,16.9228751 L30.4620692,14.3839725 Z M30.4620692,20.3066532 L28.5468624,20.3066532 C28.6864117,20.8483298 28.7688196,21.4143012 28.7688196,21.9995141 C28.7688196,25.7385792 25.7383849,28.7688196 21.9999028,28.7688196 C18.2616151,28.7688196 15.230986,25.7385792 15.230986,21.9995141 C15.230986,21.4143012 15.3137827,20.8483298 15.4533319,20.3066532 L13.5379308,20.3066532 L13.5379308,29.6150557 C13.5379308,30.08171 13.9169295,30.4605143 14.3849443,30.4605143 L29.6150557,30.4605143 C30.0830705,30.4605143 30.4620692,30.08171 30.4620692,29.6150557 L30.4620692,20.3066532 Z"></path></svg>
+                                </use>
+                            </svg>
+                        </a>   
+                        <a class="menu-link" href="twitter 주소" target="_blank">
+                            <svg class="icon-twitter">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter">
+                                    <svg id="twitter" viewbox="0 0 45 45" width="100%" height="100%"><path d="M31.364 16.836c0.93-0.56 1.644-1.448 1.98-2.505-0.87 0.519-1.834 0.896-2.86 1.099-0.822-0.88-1.992-1.43-3.287-1.43-2.487 0-4.504 2.027-4.504 4.527 0 0.355 0.040 0.7 0.117 1.032-3.743-0.189-7.061-1.991-9.282-4.73-0.388 0.669-0.61 1.446-0.61 2.276 0 1.571 0.795 2.956 2.004 3.768-0.738-0.024-1.433-0.227-2.040-0.566-0 0.019-0 0.038-0 0.057 0 2.194 1.552 4.023 3.613 4.439-0.378 0.103-0.776 0.159-1.187 0.159-0.29 0-0.572-0.028-0.847-0.081 0.573 1.799 2.236 3.108 4.207 3.144-1.541 1.214-3.483 1.938-5.593 1.938-0.363 0-0.722-0.021-1.074-0.063 1.993 1.285 4.36 2.034 6.904 2.034 8.284 0 12.813-6.899 12.813-12.881 0-0.196-0.004-0.392-0.013-0.586 0.88-0.638 1.643-1.436 2.247-2.344-0.808 0.36-1.676 0.603-2.587 0.713z"></path></svg>
+                                </use>
+                            </svg>
+                        </a>
+                        <a class="menu-link" href="youtube 주소" target="_blank">
+                            <svg class="icon-youtube">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube">
+                                    <svg id="youtube" viewbox="0 0 45 45" width="100%" height="100%"><path d="M29.615,12.184 C26.011,11.938 17.984,11.939 14.385,12.184 C10.488,12.45 10.029,14.804 10,21 C10.029,27.185 10.484,29.549 14.385,29.816 C17.985,30.061 26.011,30.062 29.615,29.816 C33.512,29.55 33.971,27.196 34,21 C33.971,14.815 33.516,12.451 29.615,12.184 L29.615,12.184 Z M19,25 L19,17 L27,20.993 L19,25 L19,25 Z"></path></svg>
+                                </use>
+                            </svg>
+                        </a>
+                        <a class="menu-link" href="applemusic 주소" target="_blank">
+                            <svg class="icon-applemusic" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="73px" height="73px" viewbox="0 0 73 73" style="enable-background:new 0 0 73 73;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                                </style>
+                                <g >
+                                </g>
+                                <g>
+                                    <g>
+                                        <path class="st0" d="M72,19.94c0-0.72-0.01-1.45-0.03-2.17c-0.04-1.58-0.14-3.17-0.42-4.73c-0.28-1.58-0.75-3.06-1.48-4.5
+                                            c-0.72-1.41-1.66-2.71-2.78-3.83c-1.12-1.12-2.42-2.06-3.83-2.78c-1.44-0.73-2.91-1.2-4.49-1.48c-1.56-0.28-3.15-0.37-4.73-0.42
+                                            C53.51,0.02,52.78,0.01,52.06,0c-0.86,0-1.72,0-2.58,0H22.52c-0.86,0-1.72,0-2.58,0c-0.72,0-1.45,0.01-2.17,0.03
+                                            c-1.58,0.04-3.17,0.14-4.73,0.42C11.46,0.74,9.98,1.2,8.55,1.94C7.13,2.66,5.84,3.6,4.72,4.72S2.65,7.13,1.93,8.55
+                                            c-0.73,1.44-1.2,2.91-1.48,4.5c-0.28,1.56-0.37,3.15-0.42,4.73C0.02,18.5,0.01,19.22,0,19.95c0,0.86,0,1.72,0,2.58v26.96
+                                            c0,0.86,0,1.72,0,2.58c0,0.72,0.01,1.45,0.03,2.17c0.04,1.58,0.14,3.17,0.42,4.73c0.28,1.58,0.75,3.06,1.48,4.5
+                                            c0.72,1.41,1.66,2.71,2.78,3.83c1.12,1.12,2.42,2.06,3.83,2.78c1.44,0.73,2.91,1.2,4.49,1.48c1.56,0.28,3.15,0.37,4.73,0.42
+                                            c0.72,0.02,1.45,0.03,2.17,0.03c0.86,0.01,1.72,0,2.58,0h26.95c0.86,0,1.72,0,2.58,0c0.72,0,1.45-0.01,2.17-0.03
+                                            c1.58-0.04,3.17-0.14,4.73-0.42c1.58-0.28,3.06-0.75,4.49-1.48c1.41-0.72,2.71-1.66,3.83-2.78s2.06-2.41,2.78-3.83
+                                            c0.73-1.44,1.2-2.91,1.48-4.5c0.28-1.56,0.37-3.15,0.42-4.73c0.02-0.72,0.03-1.45,0.03-2.17c0.01-0.86,0-1.72,0-2.58V22.52
+                                            C72,21.66,72,20.8,72,19.94z M52.71,46.85c0,0.91-0.01,1.74-0.2,2.65c-0.19,0.89-0.53,1.72-1.05,2.47
+                                            c-0.52,0.75-1.19,1.36-1.97,1.82c-0.79,0.47-1.62,0.73-2.5,0.91c-1.66,0.33-2.79,0.41-3.86,0.2c-1.03-0.21-1.9-0.68-2.6-1.32
+                                            c-1.03-0.95-1.68-2.23-1.82-3.56c-0.16-1.57,0.36-3.24,1.53-4.48c0.59-0.62,1.34-1.11,2.34-1.5c1.04-0.4,2.19-0.65,3.96-1
+                                            c0.47-0.09,0.93-0.19,1.4-0.28c0.61-0.12,1.14-0.28,1.56-0.8c0.43-0.52,0.43-1.16,0.43-1.78V24.32c0-1.21-0.54-1.54-1.7-1.32
+                                            c-0.83,0.16-18.62,3.75-18.62,3.75c-1,0.24-1.36,0.57-1.36,1.82v23.23c0,0.91-0.05,1.74-0.24,2.65c-0.19,0.89-0.53,1.72-1.05,2.47
+                                            c-0.52,0.75-1.19,1.36-1.97,1.82c-0.79,0.47-1.62,0.74-2.5,0.92c-1.66,0.33-2.79,0.41-3.86,0.2c-1.03-0.21-1.9-0.69-2.6-1.33
+                                            c-1.03-0.95-1.63-2.23-1.78-3.56c-0.16-1.57,0.31-3.24,1.49-4.48c0.59-0.62,1.34-1.11,2.34-1.5c1.04-0.4,2.19-0.65,3.96-1
+                                            c0.47-0.09,0.93-0.19,1.4-0.28c0.61-0.12,1.14-0.28,1.56-0.8c0.42-0.52,0.47-1.13,0.47-1.75c0-4.92,0-26.79,0-26.79
+                                            c0-0.36,0.03-0.6,0.05-0.72c0.09-0.56,0.31-1.05,0.72-1.39c0.34-0.28,0.78-0.48,1.33-0.6l0.01,0L49,11.33
+                                            c0.19-0.04,1.73-0.31,1.91-0.33c1.16-0.1,1.81,0.66,1.81,1.89L52.71,46.85L52.71,46.85z"></path>
+                                    </g>
+                                </g>
+                        </svg>
+                        </a>                   
+                    </div>
+                    <!-- teritiary-links -->
+                    <div class="tertiary-links">
+                        <a href="contact주소">CONTACT</a>
+                        <a href="about주소">ABOUT</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+  
+        <!-- scroll to top 만들기 -->
+        <!-- 이미지를 넣지 않고, 특수기호를 텍스트로 넣어 만들었습니다. -->
+        <div class="scrollToTop">▲</div>
+
+        <!-- 다크모드 체크 박스를 만들었습니다. -->
+        <input class="darkMode" type="checkbox"> 
+        <!-- 다크모크 체크 박스 옆 텍스트입니다. -->
+        <div class="darkModeText"> Go Dark Mode </div>
+        <div class="lightModeText"> Now Dark Mode </div>
+
+
+        <!-- 다크모드 체크 박스 클릭시 등장하는 모달을 만들어보았습니다. -->
+        <div class = "modal-container">
+            <div class = "modal" title="다크모드시 모달">
+                아이쿠 눈부셔! 다크모드를 실행합니다.<br>
+                어두운 곳에서 장시간 모니터 사용시 <br>
+                눈건강이 악화될 수 있습니다.<br>
+                <span style="color: grey; font-size: 13px;" > * 닫으려면 클릭하세요 </span>
+                <br>
+                -DAZED KOREA-
+            </div>
+        </div>
+    </body>
+
+</html>

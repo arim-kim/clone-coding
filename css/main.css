@@ -1,0 +1,786 @@
+
+/* COMMON 일괄적으로 넣어줄 것 */
+
+
+body {
+    background-color: var(--background,white);
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+
+
+ul{
+    display: block;
+    list-style: none;
+    padding : 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    padding-inline-end: 40px;
+    padding-inline-start: 40px;
+
+}
+
+li{
+    margin: 0 auto;
+}
+
+
+
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    /* 뒤에 white를 넣어준 것은 처음 웹페이지에 들어가거나 새로고침했을때는 dark 모드,light모드인지 들어온 값이 
+    없기 때문에 설정해준 것입니다. */
+    background-color: var(--background,white);
+    /* background-color: white; */
+    height: 152.8px;
+    width: 100%;
+    display: flex; 
+    position : fixed;
+    box-sizing: border-box;
+    margin : 0;
+    padding : 10px 10px 8px;
+    transition: 0.4s;
+    text-align: center;
+    /* 다른 요소보다 앞에 보이게 함  */
+    z-index: 999; 
+    
+}
+
+header img#logo{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    height: 130px;
+    width: 540px;
+    position : absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin : auto auto;
+    /* align-items: center;  */
+    transition: 0.4s;
+    align-items: center;
+    
+}
+
+
+.icon-menu, .icon-menu-back-hidden-phone{
+    
+    fill : var(--fontColor);
+    width: 44px;
+    height: 48px;
+    float: left;
+    font-size: 16px;
+    padding-left: 3px;
+    padding-top: 3px;
+    cursor: pointer;
+
+}
+.icon-menu{
+    display: inline-block;
+}
+
+.icon-menu-back-hidden-phone{
+    display: none;
+}
+/* ============================================== */
+.menu-container{
+   position: fixed;
+    justify-content: center;
+    background-color: var(--background,white);
+    top : 52.8px;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    /* transition: 0.6s; */
+  
+    
+}
+
+
+.menu-container .main-menu-box {
+  
+    height: 100%;
+    width: 1379.69px;
+    background-color:black;
+    box-sizing: border-box;
+    padding: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 auto;
+    /* 다크모드일 때 테두리 넣기 -- 잘보이게 하기 위해 사용하였습니다. */
+    border: 0.2px solid var(--borderColor);
+   
+}
+
+
+/* ============================================== */
+
+
+
+
+.primary-links .menu-link{
+    font-weight: 900;
+    display: block;
+    font: inherit;
+    font-size: 100%;
+    justify-content: center;
+    height: 49px;
+}
+
+div>.primary-links{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.main-menu-box .social-links{
+    margin : 0 0 30px;
+
+}
+
+.main-menu-box .secondary-links{
+    padding:0;
+}
+
+.secondary-links > li{
+    padding-bottom: 16px;
+}
+
+
+.main-menu-item{
+    padding-bottom: 16px;
+}
+div>.tertiary-links{
+    font-size: 14px;
+    align-items: center;
+    display: inline-block;
+    padding: 0;
+    font-weight: 600;
+    height: 49;
+}
+ul>.menu-link#menu-contact{
+    padding : 0 10px; 
+    float: left;
+    
+}
+ul>.menu-link#menu-about, #menu-notice{
+    padding : 0 10px; 
+    float:left;
+   
+}
+/* --------------------------------------------------------------------------------- */
+body .wrapper{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* transition 정상작동 */
+    transition: 0.6s; 
+    padding-top : 152.8px;
+    background-color: var(--background);
+    color:var(--fontColor);
+
+    
+}
+
+
+.first-grid-container {
+    position: relative;
+    justify-content: center; 
+    width: calc(100% - 175.21px);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    margin: 0 auto;
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: var(--background);
+    color:var(--fontColor);
+   
+}
+
+.second-youtube-container{
+    width : 100%;
+    height: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+}
+
+.third-magazine-interview-container{
+    flex: 0 0 100%;
+    display: grid;
+    width: 1459.17px;
+    height: 2234.49px;
+    grid-template-columns: repeat(3,auto);
+	grid-template-rows: repeat(3,auto);
+    margin: 0 auto; 
+    padding-bottom: 60px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 60px;
+    gap : 60px 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+       
+}
+
+
+.forth-section-container{
+    margin : 0 auto; 
+    display : grid;
+    align-items: center;
+    width: 1344px;
+    height: 552.24px;
+    box-sizing: border-box;
+    grid-template-rows: 64.4px 337.64px 91.6px;
+    margin-bottom: 59.84px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+
+
+}
+.first-grid-container > div {
+    position: relative;
+    height: 200px;
+    width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    width: 400px;
+    
+}
+
+/* ================================================= */
+
+.first-grid-container .grid-item1{
+    height:  573.59px;
+    width: 900.48px;
+    box-sizing: border-box;
+    margin : 0 auto 60px;
+    padding : 0 40px 0 0 ;
+    padding-right: 40px;
+}
+
+.first-grid-container .grid-item2{
+    width : 443.51px;
+    height: 100%;
+    margin : 0 auto 60px;
+    padding : 0 0;
+    box-sizing: border-box;
+
+}
+
+.grid-item1 .text-content-container{
+    display: flex;
+    /* 이미지 위에 텍스트 겹치려면 이미지나 텍스트중 둘 중 하나가 absolute 여야함 */
+    position : absolute;
+    /* 이미지 위에 텍스트를 보이게 하기 위하여 */
+    z-index: 1;
+    background-clip: content-box;
+    bottom : 0%;
+    left: 0;
+    align-items: center;
+    /* 배경을 blur 처리 해주는 코드 - 배경 이미지 없이 반투명하게 만들어준다. blur의 강도를
+    낮추고 싶으면 backdrop-filter의 blur 값을 낮춘다. */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+
+}
+.grid-item1 .text-content-container > a{
+    display: block;
+    position: relative;
+    text-align: center;
+    color : white;
+    font-size: 20px;
+    margin: 0 auto;
+    font-weight: 600;
+   
+}
+
+.grid-item1 .cover-img{
+    width : 100% ;
+    height : 100% ; 
+}
+
+.grid-item2 .article-list-header{
+    display: block;
+    width : 100%;
+    padding : 0 10px 11px;
+    margin-bottom: 11px;
+    font-size: 22px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+
+
+}
+
+
+.grid-item2 .article-list-item{
+
+    padding : 0 10px;
+    box-sizing: border-box;
+    margin-top : 4px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.article-list-image-container .list-image{
+    /* 사진을 크기에 맞게 자름. */
+    object-fit: cover;
+}
+
+.article-list-item .article-list-text-container{
+    position: relative;
+    padding-left: 7px;
+    width: 309.16px;
+    align-items: center;
+}
+
+.article-list-text-container .section-link{
+    position: relative;
+    display : block;
+    width: 102.78px;
+    height: 19.2px;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--fontColor);
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+    
+
+}
+
+
+
+/* a태그 */
+.article-list-text-container .article-list-text{
+    position: relative;
+    display: block;
+    color: var(--fontColor);
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    white-space: normal;
+    overflow : hidden;
+    width: 80%;
+    /* 단어가 잘리지 않게 하는 속성 없음 - 홈페이지에서 실제로 단어가 잘리게 내버려둔 구성 */
+}
+
+.grid-item2 .article-list-more{
+    height: 50.2px;
+    padding : 15px 100px 14px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+    cursor: pointer;
+}
+
+
+.article-list-more .article-list-more-link{
+    display: block;
+    font-size: 13px;
+    color: var(--fontColor);
+
+    text-decoration: underline;
+}
+
+/* div 호버 했을때 a밑줄 사라지게 하기 */
+.article-list-more:hover > .article-list-more-link {
+    text-decoration: none;
+}
+
+
+.third-magazine-interview-container .frame{
+    position: relative;
+    width :486.39px;
+    height: 684px;
+    padding: 0 10px; 
+    box-sizing: border-box;
+    background-clip: content-box;
+    align-items: center;
+}
+
+.frame >img {
+    position: relative;
+    width :100%;
+    height:100%;
+}
+
+.frame .text-content-container {
+    display: flex;
+    /* 이미지 위에 텍스트 겹치려면 이미지나 텍스트중 둘 중 하나가 absolute 여야함 */
+    position : absolute;
+    /* 이미지 위에 텍스트를 보이게 하기 위하여 */
+    z-index: 1;
+    background-clip: content-box;
+    bottom : 0%;
+    left: 50%;
+    align-items: center;
+    transform: translate( -50% );
+    box-sizing: border-box;
+
+    /* 배경을 blur 처리 해주는 코드 - 배경 이미지 없이 반투명하게 만들어준다. blur의 강도를
+    낮추고 싶으면 backdrop-filter의 blur 값을 낮춘다. */
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(10px);
+}
+
+.frame .text-content-container > a{
+    /* 줄간격 */
+    display: block;
+    position: relative;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    /* 단어가 잘리지 않도록 해준다. */
+    word-break: keep-all;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+/* ===================================================== */
+.forth-section-container .most-read{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.forth-section-container .most-read {
+    box-sizing: border-box;
+    font-size: 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+
+}
+
+.forth-main-text-container .forth-main-text-section{
+    width: 297px;
+    height: 19.6px;
+    display: block;
+    margin-bottom: 16px;
+}
+.forth-main-text-section .forth-main-text-section-link{
+    display: block;
+    text-align: left;
+    color: var(--fontColor);
+
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: normal;
+}
+.forth-section-container .forth-section-main{
+    display : grid; 
+    grid-template-columns: 336px 336px 336px 336px;
+}
+
+.forth-section-main .forth-main-conent-container{
+    width: 100%;
+    height: 100%;
+    padding : 0px 3px;
+    box-sizing: border-box;
+    background-clip: content-box;
+
+
+}
+.forth-main-text-container{
+    width: 297px;
+    height: 105.6px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.forth-main-text-container .forth-main-text-content{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    float: left;
+    text-align: left;
+    color: var(--fontColor);
+
+
+}
+
+.forth-main-conent-link > img{
+    margin-bottom: 12px;
+}
+
+.forth-section-container .Load-more-article{
+    box-sizing: border-box;
+    margin : 40px 3px 0; 
+   
+}
+
+
+.Load-more-article .Load-more-article-link{
+    display: block;
+    border: 1px solid #b3b3b3;
+    width: 345.73px;
+    height: 100%;
+    /* a태그는 text-align이 안되기 때문에 line-height 를 이용하여 수직정렬 */
+    line-height: 50.2px;
+    margin: 0 auto;
+    text-decoration: underline;
+    color: var(--fontColor);
+
+    font-size: 13px;
+    
+
+}
+
+/* div 호버 했을때 a밑줄 사라지게 하기 */
+.Load-more-article:hover > .Load-more-article-link {
+    text-decoration: none;
+}
+    
+/* footer 설정 =================================================== */
+
+
+.footer-container .footer-container-inner {
+    height: 340.2px;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+
+.dazed-logo-top-holder-img{
+    margin: 0 ;
+}
+
+.footer-container .dazed-logo-top-holder{
+    padding : 20px;
+    display: inline-block;
+    width: 560px;
+    height: 135px;
+    margin: 0;
+
+}
+
+.footer-container .footer-nav{
+    position : sticky;
+    background-color: black;
+    height: 176.4px;
+    padding : 24px 0; 
+    bottom : 0;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+
+.footer-nav .social-links{
+    height: 44px;
+    width: 100%;
+    margin : 0px 0px 31px;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.social-links .menu-link{
+    /* 가로 정렬 */
+    display: inline-block;
+    padding : 0 6px;
+    width: 44px;
+}
+
+.social-links .icon-applemusic{
+    display: inline;
+    width: 24px;
+    height: 44px;
+}
+
+.social-links .icon-facebook, .icon-instagram, .icon-twitter, .icon-youtube{
+    fill: white;
+    width: 44px;
+    height: 44px;
+}
+
+.footer-nav .tertiary-links{
+    height: 22.4px;
+    width: 100%;
+    margin : 0 auto;
+    font-size: 14px;
+    align-items: center;
+   
+    
+}
+
+.tertiary-links > a{
+    display: inline-block;
+    padding : 0px 10px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    
+}
+
+/* hover시 검정색으로 글씨색 변경 */
+.tertiary-links > a:hover {color: black;}
+
+/* ------------------ scroll 아이콘  */
+.scrollToTop {
+
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    border: 0.2rem solid white;
+    background-color: rgba(0,0,0,0.4);
+    color : white;
+    text-align: center;
+    position: fixed;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* 위치 조정 */
+    bottom : 1rem;
+    right : 1rem;
+    /* 가장 상위에 */
+    z-index: 999; 
+    line-height: 2.6rem;
+    
+    /* 투명해지는 것 속도 */
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+/* scrollToTop 에 넣을 css class */
+.scroll-active{
+    opacity: 1;
+    cursor: pointer;
+    visibility: visible;
+}
+
+/* 다크모드 설정 박스 */
+.darkMode {
+    display: block;
+    text-align: center;
+    position: fixed;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* 위치 조정 */
+    top : 1rem;
+    /* bottom : 1.5rem; */
+    right : 1rem;
+    /* 가장 상위에 */
+    z-index: 999; 
+    line-height: 2.6rem;
+    cursor: pointer;
+    /* 투명해지는 것 속도
+    opacity: 0; */
+    transition-duration: 0.4s;
+}
+
+/* 다크모드 텍스트 ============================*/
+.darkModeText{
+    position: fixed;
+    /* 위치 조정 */
+    top : 1rem;   
+    right : 2.5rem;
+    color: var(--fontColor);
+    font-family: 'Noto Sans KR', sans-serif;
+    z-index: 999;
+
+}
+
+.lightModeText{
+    
+    position: fixed;
+    display: none;
+    /* 위치 조정 */
+    top : 1rem;   
+    right : 2.5rem;
+    color: var(--fontColor);
+    font-family: 'Noto Sans KR', sans-serif;
+    z-index: 999;
+
+}
+
+/* 다크모드 설정입니다. */
+/* root으로 css를 설정하면, 동일한 설정을 가지는 각각 요소의 설정을 한줄로 설정할 수 있어 간편하고
+다크 모드처럼 한번에 여러가지 요소의 색상을 변경하여야 하는 경우 사용합니다. */
+/* 다른 속성에는 원하는 설정에 맞게 var(--background) 등과 같이 기입해주면 됩니다.저는 다크모드가 실행되면
+색이 바뀌어야 하는필수적인 요소들의 색 설정에 사용하였습니다. */
+
+:root[color-all ='light']{
+    --background : #fff;
+    --fontColor: #000;
+    --borderColor : black; 
+}
+
+:root[color-all ='dark']{
+    --background : #000;
+    --fontColor: #fff;
+    --borderColor : white; 
+}
+
+/* 모달 컨테이너*/
+.modal-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top:0;
+    left: 0;
+    /* 당연히 처음엔 보이지 않아야함 */
+    display: none;
+    z-index: 999;
+}
+
+.modal{
+    width:600px; 
+    height:300px;
+    background:white;
+    border-radius:100%;
+    position:relative; 
+    top : calc(50% - 150px);
+    margin: 0 auto;
+    text-align:center;
+    color : black;
+    box-sizing:border-box; 
+    padding:74px 0;
+    line-height:30px; 
+    cursor:pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+}
+
+/* =============================모달창이 열렸을때 스크롤을 없애기 위해서 overflow:hidden 설정과 touch-action을 막은 설정을 
+추가한 css class입니다. 이 클래스를 body전체에 걸어주는 방식을 사용했습니다. ============== */
+.hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
